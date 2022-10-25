@@ -2,7 +2,7 @@
     <div class="flex items-center">
         <button class="bg-blue-600 py-2 px-5 rounded-md mt-10 text-white text-[.9rem]" @click="onToggleAdd">Add Order</button>
         <div class="mt-10 ml-auto bg-gray-100 px-3 py-2 rounded-lg items-center">
-                <input type="text" v-model="search" @keyup="filterList(search)" placeholder="Search here"
+                <input type="text" v-model.trim="search" @keyup="filterList(search)" placeholder="Search here"
                     class="placeholder:text-[.9rem] placeholder:font-normal font-normal outline-none bg-transparent w-[15rem] px-3">
 
             <!-- <button class="px-3 items-center py-3 rounded-lg text-[1.3rem] font-semibold">
@@ -117,14 +117,9 @@
                 },
                 filterList(search) {
                     // console.log('',search);
-                    if(search == ''){
-                        return this.data
-                    } else{
                         this.data = this.data.filter((order) => {
                            return order.CustomerName.toLowerCase().includes(search.toLowerCase())
                         })
-                    }
-                        
                     },
             },
     }
