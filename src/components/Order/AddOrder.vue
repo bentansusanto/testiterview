@@ -109,7 +109,8 @@ import axios from 'axios';
                         },
                     })
                     .then((response) => {
-                        console.log(response.data)
+                        // console.log(response.data)
+                        this.data = response.data.data
                     }).catch((err) => {
                         console.log("Error",err.response.data)
                     });   

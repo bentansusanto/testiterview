@@ -116,7 +116,7 @@
                     })
                 },
                 filterList(search) {
-                    console.log('',search);
+                    // console.log('',search);
                     if(search == ''){
                         return this.data
                     } else{

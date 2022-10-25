@@ -46,7 +46,7 @@
                     })
                     .then((response) => {
                         this.item = response.data;
-                        console.log(response.data)
+                        // console.log(response.data)
                     }).catch((err) => {
                         console.log("ERR", err.response.data)
                     });
