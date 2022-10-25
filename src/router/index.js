@@ -1,10 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import HomeView from '../components/HomeView';
-import CustomersView from '../components/CustomersView';
-import ItemsView from '../components/ItemsView';
-import ListOrder from '../components/ListOrder';
-import PaymentView from '../components/PaymentView';
+import BusinessView from '../components/BusinessPartner/BusinessPartner';
+import ItemsView from '../components/Item/ItemsView';
+import ListOrder from '../components/Order/ListOrder';
+import OrderDetail from '../components/Order/ShowOrder';
+import PaymentView from '../components/Payment/PaymentView';
+
 const routes = [
     {
         path : '/',
@@ -12,9 +14,9 @@ const routes = [
         component : HomeView
     },
     {
-        path : '/customers',
-        name : 'Customers',
-        component : CustomersView
+        path : '/business-partner',
+        name : 'Business Partner',
+        component : BusinessView
     },
     {
         path : '/items',
@@ -25,6 +27,11 @@ const routes = [
         path : '/orders',
         name : 'Orders',
         component : ListOrder
+    },
+    {
+        path : '/orders/:Oid',
+        name : 'Order Detail',
+        component : OrderDetail
     },
     {
         path : '/payment',

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import TablePayment from '../components/TablePayment.vue'
+    import TablePayment from './TablePayment.vue'
     export default {
         components : {
             TablePayment

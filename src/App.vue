@@ -1,16 +1,16 @@
 <template>
   <div class="flex">
-    <SideNav/>
+    <Nav-view/>
     <router-view/>
   </div>
 </template>
 
 <script>
-import  SideNav  from "../src/NavFot/SideNav.vue";
+import  NavView  from "./NavFot/NavView.vue";
 export default {
   name: 'App',
   components : {
-    SideNav
+    NavView
   }
 }
 </script>
