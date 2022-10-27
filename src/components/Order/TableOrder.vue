@@ -117,10 +117,14 @@
                 },
                 filterList(search) {
                     // console.log('',search);
+                    this.deleteList()
                         this.data = this.data.filter((order) => {
-                           return order.CustomerName.toLowerCase().includes(search.toLowerCase())
+                           return order.StatusName.toLowerCase().includes(search.toLowerCase())
                         })
                     },
+                deleteList(){
+                    this.data
+                }
             },
     }
 </script>
