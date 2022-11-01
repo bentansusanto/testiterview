@@ -115,15 +115,18 @@
                         console.log("err",e.response.data)
                     })
                 },
+
+                // Filter Data
                 filterList(search) {
                     // console.log('',search);
                     this.deleteList()
                         this.data = this.data.filter((order) => {
-                           return order.StatusName.toLowerCase().includes(search.toLowerCase())
+                           return order.BusinessPartnerName.toLowerCase().includes(search.toLowerCase())
                         })
                     },
+                
                 deleteList(){
-                    this.data
+                    return this.data;
                 }
             },
     }

@@ -1,7 +1,7 @@
 <template>
     <div class="bg-[#fafafa] w-[40rem] py-5 h-[30rem] mt-10 shadow-lg">
-            <div class="bg-green-600 w-[9rem] px-5 py-2">
-                <h4 class="text-white">{{item.StatusName}}</h4>
+            <div class="px-5 py-2">
+                <h4 class="text-[1rem] font-medium">Status : {{item.StatusName}}</h4>
             </div>
             <div class="mx-10 mt-5">
                 <div>

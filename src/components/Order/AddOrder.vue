@@ -2,7 +2,7 @@ import axios from 'axios';
 <template>
     <div v-if="isModalVisible">
         <div @click="onToggleAdd" class="absolute bg-black opacity-70 inset-0 "></div>
-        <div class="w-[40rem] p-5 mx-auto -mt-[43rem] rounded-xl shadow-lg bg-white relative z-30">
+        <div class="w-[40rem] p-5 mx-auto -mt-[45rem] rounded-xl shadow-lg bg-white relative z-30">
             <h2 class="text-[1.5rem] text-center font-semibold">Add Invoice</h2>
             <div>
                 <div class="p-5 flex-auto justify-center leading-6">
@@ -64,7 +64,7 @@ import axios from 'axios';
                     </button>
                     <button type="submit"
                         class="mb-2 md:mb-0 bg-blue-500 px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-md hover:shadow-lg hover:bg-blue-600">
-                        Add Item
+                        Add Invoice
                     </button>
                 </div>
             </div>
