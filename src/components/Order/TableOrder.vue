@@ -10,8 +10,8 @@
             </button> -->
         </div>
     </div>
-    <table class=" w-[68rem] text-sm text-left text-white my-5 overflow-y-scroll block h-[30rem]">
-        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 sticky top-0">
+    <table class=" w-auto text-sm text-left text-white my-5 overflow-y-scroll block h-[30rem]">
+        <thead class="text-xs w-full text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 sticky top-0">
             <tr>
                 <th scope="col" class="py-3 px-6">
                     Date
